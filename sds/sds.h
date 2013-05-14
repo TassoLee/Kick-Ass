@@ -35,8 +35,6 @@
 
 typedef char *sds;
 
-struct sdshdr;
-
 sds sdsnewlen(const void *init, size_t initlen);
 sds sdsnew(const char *init);
 sds sdsempty();
