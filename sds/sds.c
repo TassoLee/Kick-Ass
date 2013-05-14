@@ -37,10 +37,11 @@
 #include <stdarg.h>
 
 #define SDS_MAX_PREALLOC (1024*1024)
-#define zmalloc malloc
-#define zcalloc(n) calloc(1, n);
-#define zrealloc realloc
-#define zfree free
+
+#define zmalloc(size) malloc(size)
+#define zcalloc(size) calloc(1,size);
+#define zrealloc(ptr,size) realloc(ptr,size)
+#define zfree(ptr) free(ptr)
 
 struct sdshdr {
     int len;
