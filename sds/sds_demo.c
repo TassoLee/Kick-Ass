@@ -35,7 +35,7 @@ int main()
 {
     sds s = sdsnew("Hello, world!");
     puts(s);
-    sdsfree(s);
+    sdsdelete(s);
     return 0;
 }
 

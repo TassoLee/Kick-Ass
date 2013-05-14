@@ -35,6 +35,8 @@
 
 typedef char *sds;
 
+#define sdsdelete(s) sdsfree(s)
+
 sds sdsnewlen(const void *init, size_t initlen);
 sds sdsnew(const char *init);
 sds sdsempty();
