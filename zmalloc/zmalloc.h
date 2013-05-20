@@ -62,6 +62,7 @@
 #endif
 
 #ifndef ZMALLOC_LIB
+#include <stddef.h>
 #define ZMALLOC_LIB "libc"
 #endif
 
